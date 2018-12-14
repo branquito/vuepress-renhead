@@ -1,21 +1,30 @@
 module.exports = {
-  title: 'Things to consider regarding front-end usage',
-  description: 'General tips on custom component`s usage',
+  title: "Things to consider regarding front-end usage",
+  description: "General tips on custom component`s usage",
   markdown: {
-    lineNumbers: true
+    lineNumbers: true,
+    anchor: {
+      permalink: true,
+      permalinkBefore: true,
+      permalinkSymbol: "#"
+    }
   },
   themeConfig: {
-    nav: [{ text: 'Home', link: '/' }, { text: 'Blog', link: '/blog/' }],
+    nav: [{text: "Home", link: "/"}, {text: "Blog", link: "/blog/"}],
     sidebar: [
       {
-        title: 'Guide',
+        title: "Guide",
         collapsable: false,
-        children: ['/guide/section-A/', '/guide/section-B/', '/guide/section-C/']
+        children: [
+          "/guide/section-A/",
+          "/guide/section-B/",
+          "/guide/section-C/"
+        ]
       },
       {
-        title: 'Docs',
+        title: "Docs",
         collapsable: true,
-        children: [['/', 'Home']]
+        children: [["/", "Home"]]
       }
     ]
   }
